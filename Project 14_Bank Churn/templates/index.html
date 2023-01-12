@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="{{url_for('static', filename='CSS/style.css')}}">
+<script type="text/javascript" src="{{ url_for('static', filename='script/script.js')}}">
+
+</script>   
+</head>
+<body style="background-color: rgb(169, 196, 236)">
+    <center>
+
+
+        <h2> Churn Predictions </h2>
+
+    <form action="/submit" method="post">
+
+        <label for="RowNumber"> RowNumber:</label><br>
+        <input type="text" id="RowNumber" name="RowNumber" value="0"><br>
+
+        <label for="CreditScore"> CreditScore:</label><br>
+        <input type="text" id="CreditScore" name="CreditScore" value="0"><br>
+
+        <label for="Geography"> Geography:</label><br>
+        <input type="text" id="Geography" name="Geography" value="0"><br>
+
+        <label for="Gender"> Gender:</label><br>
+        <input type="text" id="Gender" name="Gender" value="0"><br>
+
+        <label for="Age"> Age:</label><br>
+        <input type="text" id="Age" name="Age" value="0"><br><br>
+
+        <label for="Tenure"> Tenure:</label><br>
+        <input type="text" id="Tenure" name="Tenure" value="0"><br><br>
+
+        <label for="Balance"> Balance:</label><br>
+        <input type="text" id="Balance" name="Balance" value="0"><br>
+
+        <label for="NumOfProducts"> NumOfProducts:</label><br>
+        <input type="text" id="NumOfProducts" name="NumOfProducts" value="0"><br>
+
+        <label for="HasCrCard"> HasCrCard:</label><br>
+        <input type="text" id="HasCrCard" name="HasCrCard" value="0"><br>
+
+        <label for="IsActiveMember"> IsActiveMember:</label><br>
+        <input type="text" id="IsActiveMember" name="IsActiveMember" value="0"><br><br>
+
+        <label for="EstimatedSalary"> EstimatedSalary:</label><br>
+        <input type="text" id="EstimatedSalary" name="EstimatedSalary" value="0"><br><br>
+
+        <input type="submit" value="submit">
+    </form>
+
+    </center>
+
+
+</body>
+</html>
